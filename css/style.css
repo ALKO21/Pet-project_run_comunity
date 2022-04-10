@@ -1,61 +1,92 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  text-align: center;
-}
-
-h1 {
-  font-size: 24px;
-}
-
-/* В CSS есть несколько ключевых слов для описания базовых функций Безье. По умолчанию используется значение ease - переход начинается медленно, быстро ускоряется, а затем снова замедляется в конце. Остальные ключевые слова: linear, ease-in, ease-out, и ease-in-out. */
-
-.flex-container {
-  border: 2px dashed #2a2a2a;
-  border-radius: 4px;
+.block-scale {
   display: flex;
+  width: 50px;
+  height: 50px;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 100px);
+
+  margin-bottom: 100px;
+
+  transform: scale(1, 1);
+  background-color: darkgoldenrod;
+
+  transition: transform 500ms linear;
 }
 
-.circle {
+.scene-scale:hover .block-scale {
+  transform: scale(-1, 1);
+}
+
+.block-rotate {
   display: flex;
+  width: 50px;
+  height: 50px;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
-  flex-shrink: 0;
-  margin-left: 30px;
-  margin-right: 30px;
-  border-radius: 50%;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
-  transition-property: transform;
+  margin-bottom: 100px;
+
+  transform: rotate(0);
+
+  background-color: red;
+
+  transition: transform 500ms linear;
 }
 
-.flex-container:hover .circle {
-  transform: scale(1.5);
+.scene-rotate:hover .block-rotate {
+  transform: rotate(180deg);
 }
 
-.circle:nth-child(1) {
-  background-color: orange;
+.block-skew {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
 
-  transition-duration: 500ms;
-}
+  margin-bottom: 100px;
 
-.circle:nth-child(2) {
-  background-color: #03a9f4;
+  transform: skew(0deg, 0deg);
 
-  transition-duration: 1500ms;
-}
-
-.circle:nth-child(3) {
   background-color: palevioletred;
 
-  transition-duration: 3000ms;
+  transition: transform 500ms linear;
+}
+
+.scene-skew:hover .block-skew {
+  transform: skew(30deg, 100deg);
+}
+
+/* 3D */
+.scene-transform-origin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 200px;
+
+  border: 2px black solid;
+  background-color: rgba(150, 0, 34, 0.5);
+}
+
+.block-transform-origin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100px;
+
+  perspective-origin: 0 0;
+  perspective: 500px;
+
+  background-color: yellow;
+  border: 2px black dashed;
+
+  transition: transform 500ms linear;
+}
+
+.scene-transform-origin:hover .block-transform-origin {
+  transform: rotateX(30deg);
 }
