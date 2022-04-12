@@ -1,92 +1,69 @@
-.block-scale {
+.form:focus-within {
+  border-color: #2196f3;
+  color: fuchsia;
+}
+
+.form-label:focus-within {
+  color: fuchsia;
+}
+
+.form-input:not(:placeholder-shown):required:valid {
+  border-color: #4caf50;
+}
+
+.form-input:not(:placeholder-shown):required:invalid {
+  border-color: #f44336;
+}
+
+/* Example styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+.form {
+  width: 100%;
+  padding: 24px;
+  border-radius: 4px;
+  border: 2px dashed #2a2a2a;
+}
+
+.form-label {
   display: flex;
-  width: 50px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-
-  margin-bottom: 100px;
-
-  transform: scale(1, 1);
-  background-color: darkgoldenrod;
-
-  transition: transform 500ms linear;
+  flex-direction: column;
+  margin-bottom: 16px;
 }
 
-.scene-scale:hover .block-scale {
-  transform: scale(-1, 1);
+.label-text {
+  margin-bottom: 4px;
 }
 
-.block-rotate {
-  display: flex;
-  width: 50px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-
-  margin-bottom: 100px;
-
-  transform: rotate(0);
-
-  background-color: red;
-
-  transition: transform 500ms linear;
+.form-input {
+  padding: 8px;
+  border: 1px solid #2a2a2a;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
 }
 
-.scene-rotate:hover .block-rotate {
-  transform: rotate(180deg);
+button {
+  display: inline-flex;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: inherit;
+  cursor: pointer;
 }
 
-.block-skew {
-  display: flex;
-  width: 50px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-
-  margin-bottom: 100px;
-
-  transform: skew(0deg, 0deg);
-
-  background-color: palevioletred;
-
-  transition: transform 500ms linear;
-}
-
-.scene-skew:hover .block-skew {
-  transform: skew(30deg, 100deg);
-}
-
-/* 3D */
-.scene-transform-origin {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 200px;
-  height: 200px;
-
-  border: 2px black solid;
-  background-color: rgba(150, 0, 34, 0.5);
-}
-
-.block-transform-origin {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 100px;
-  height: 100px;
-
-  perspective-origin: 0 0;
-  perspective: 500px;
-
-  background-color: yellow;
-  border: 2px black dashed;
-
-  transition: transform 500ms linear;
-}
-
-.scene-transform-origin:hover .block-transform-origin {
-  transform: rotateX(30deg);
+button:hover,
+button:focus {
+  background-color: #1976d2;
 }
