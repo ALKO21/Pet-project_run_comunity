@@ -1,0 +1,44 @@
+.client {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
+}
+.client__item {
+  height: 92px;
+
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 90px) / 3);
+  }
+}
+.client__link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+
+  border: #afb1b8 1px solid;
+  border-radius: 4px;
+
+  transition: border 250ms $cubic, fill 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    fill: $colorAccent;
+    border: $colorAccent 1px solid;
+  }
+}
+
+.client__icon {
+  width: 102px;
+  height: 60px;
+}

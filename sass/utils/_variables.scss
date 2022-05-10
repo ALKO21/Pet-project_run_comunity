@@ -1,0 +1,43 @@
+// :root {
+//   --color-accent: #2196f3;
+//   --color-gray: #757575;
+//   --color-black: #212121;
+//   --color-white: #ffffff;
+//   --color-white-background: #ffffff;
+//   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+$colorWhite: #ffffff;
+$colorAccent: #2196f3;
+$colorGray: #757575; // rgba(117, 117, 117, 1);
+$colorBlack: #212121;
+$colorSocialItems: #afb1b8;
+$colorFormPlaceholderGrey: rgba(117, 117, 117, 0.5);
+$colorSubscriptionPlaceholderGrey: rgba(255, 255, 255, 0.6);
+
+$bgColorWhite: #ffffff;
+$bgColorLayout: rgba(47, 48, 58, 0.8);
+$bgColorFooter: #2f303a;
+$bgColorBackdrop: rgba(0, 0, 0, 0.2);
+$bgColorProjectButtons: #f5f4fa;
+$bgColorProjectOverlay: rgba(33, 150, 243, 0.9);
+
+$colorOutline: #ececec;
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
+// $visually-hidden {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   border: 0;
+//   padding: 0;
+//   white-space: nowrap;
+//   clip-path: inset(100%);
+//   clip: rect(0 0 0 0);
+//   overflow: hidden;
+// }

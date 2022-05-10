@@ -1,0 +1,30 @@
+.burger-menu {
+  border: none;
+  background-color: transparent;
+
+  &.is-open {
+    z-index: 3;
+  }
+
+  & .burger-menu__icon-cross {
+    display: none;
+  }
+
+  &.is-open .burger-menu__icon-cross {
+    display: block;
+  }
+
+  &.is-open .burger-menu__icon-menu {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: $colorAccent;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}

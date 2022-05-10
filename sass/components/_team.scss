@@ -1,0 +1,104 @@
+.team {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: auto;
+  }
+}
+
+.team__item {
+  background-color: $bgColorWhite;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 767px) {
+    &:nth-child(-n + 3) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - (4 * 15px)) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin: 0px;
+
+    &:nth-child(-n + 3) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.team__detail {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team__title {
+  text-align: center;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+}
+.team__text {
+  text-align: center;
+  margin-bottom: 16px;
+  color: $colorGray;
+}
+
+// .team__photo {
+//   @media screen and (max-width: 767px) {
+
+//     background-image: url(/img-rast/team/team1-450.jpg);
+//     background-image: url(/img-rast/team/team2-450.jpg);
+//     background-image: url(/img-rast/team/team3-450.jpg);
+//     background-image: url(/img-rast/team/team4-450.jpg);
+
+//     @media screen and (min-device-pixel-ratio: 2),
+//       screen and (min-resolution: 192dpi),
+//       screen and (min-resolution: 2dppx) {
+//       background-image: url(/img-rast/team/team1-450@2x.jpg);
+//       background-image: url(/img-rast/team/team2-450@2x.jpg);
+//       background-image: url(/img-rast/team/team3-450@2x.jpg);
+//       background-image: url(/img-rast/team/team4-450@2x.jpg);
+//     }
+//   }
+//   @media screen and (min-width: 768px), screen and (max-width: 1199px) {
+//     background-image: url(/img-rast/team/team1-354.jpg);
+//     background-image: url(/img-rast/team/team2-354.jpg);
+//     background-image: url(/img-rast/team/team3-354.jpg);
+//     background-image: url(/img-rast/team/team4-354.jpg);
+
+//     @media screen and (min-device-pixel-ratio: 2),
+//       screen and (min-resolution: 192dpi),
+//       screen and (min-resolution: 2dppx) {
+//       background-image: url(/img-rast/team/team1-354@2x.jpg);
+//       background-image: url(/img-rast/team/team2-354@2x.jpg);
+//       background-image: url(/img-rast/team/team3-354@2x.jpg);
+//       background-image: url(/img-rast/team/team4-354@2x.jpg);
+//     }
+//   }
+//   @media screen and (min-width: $desktop) {
+//     background-image: url(/img-rast/team/team1-270.jpg);
+//     background-image: url(/img-rast/team/team2-270.jpg);
+//     background-image: url(/img-rast/team/team3-270.jpg);
+//     background-image: url(/img-rast/team/team4-270.jpg);
+
+//     @media screen and (min-device-pixel-ratio: 2),
+//       screen and (min-resolution: 192dpi),
+//       screen and (min-resolution: 2dppx) {
+//       background-image: url(/img-rast/team/team1-270@2x.jpg);
+//       background-image: url(/img-rast/team/team2-270@2x.jpg);
+//       background-image: url(/img-rast/team/team3-270@2x.jpg);
+//       background-image: url(/img-rast/team/team4-270@2x.jpg);
+//     }
+//   }
+// }
