@@ -361,13 +361,86 @@ template {
   display: none;
 }
 
+body {
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 14px;
+}
+
+main {
+  padding-top: 100px;
+}
+
+.container {
+  outline: red solid 1px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
 .header {
+  outline: green solid 1px;
   position: fixed;
   width: 100%;
-  height: 100px;
+  height: 70px;
   top: 0;
   right: 0;
-  background-color: aquamarine;
+  background-color: rgb(94, 178, 153);
+}
+
+.header-body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  position: absolute;
+  top: auto;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.logo__img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 767px) {
+  .header__list {
+    display: none;
+  }
+  .header__list.is-open {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 15px;
+    width: 100%;
+    height: 100vh;
+    font-size: 25px;
+    line-height: 1.6;
+    color: black;
+    background-color: rgb(184, 165, 165);
+  }
+}
+
+.header__link:hover {
+  cursor: pointer;
+  color: white;
 }
 
 .burger-open {
@@ -418,4 +491,55 @@ template {
   top: 15%;
   right: 25%;
   transform: rotate(45deg);
+}
+
+.burger-block {
+  display: none;
+}
+@media (max-width: 767px) {
+  .burger-block {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: auto;
+    right: 0;
+    width: 50px;
+    height: 50px;
+  }
+  .burger-block.is-open::before, .burger-block.is-open::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: white;
+  }
+  .burger-block.is-open::before {
+    transform: rotate(45deg);
+  }
+  .burger-block.is-open::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.burger-block__base {
+  width: 100%;
+  height: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.burger-block__base::before, .burger-block__base::after {
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  right: 0;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: white;
+}
+.burger-block__base.is-open {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
