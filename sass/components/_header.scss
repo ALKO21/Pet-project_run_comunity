@@ -31,10 +31,6 @@
   height: 50px;
 }
 
-.header__menu {
-}
-
-
 .header__list {
   @media (max-width: 767px) {
     display: none;
@@ -55,11 +51,10 @@
       font-size: 25px;
       line-height: calc(40 / 25);
       color: black;
-      background-color: $lightShade;
+      background-color: $colorLightShade;
     }
   }
 }
-
 
 .header__link {
   &:hover {

@@ -1,0 +1,40 @@
+.social {
+  display: flex;
+  gap: 20px;
+}
+
+.social_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid gray;
+
+  &:hover {
+    border: 1px solid $accentColor;
+    cursor: pointer;
+    fill: $accentColor;
+    color: $accentColor;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+
+  color: gray;
+  fill: gray;
+
+  &:hover {
+    fill: $accentColor;
+    color: $accentColor;
+
+  }
+}

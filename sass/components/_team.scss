@@ -1,0 +1,31 @@
+.section__title {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.team__detail {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: auto;
+  gap: 20px;
+  align-items: center;
+}
+
+.team__title {
+  text-align: center;
+  font-size: 24px;
+}
+
+.team__text {
+  font-size: 18px;
+  line-height: calc(24 / 18);
+}
+

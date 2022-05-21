@@ -2,7 +2,6 @@
   display: none;
 
   @media (max-width: 767px) {
-    // outline: red 2px solid;
     position: absolute;
     display: flex;
     align-items: center;
@@ -12,6 +11,23 @@
 
     width: 50px;
     height: 50px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      z-index: 2;
+      right: 0;
+      content: "";
+      width: 100%;
+      height: 5px;
+      background-color: white;
+    }
+    &::before {
+      top: 20%;
+    }
+    &::after {
+      bottom: 20%;
+    }
 
     &.is-open {
       &::before,
@@ -42,17 +58,6 @@
   justify-content: center;
   align-items: center;
   background-color: white;
-
-  &::before, &::after {
-    position: absolute;
-    z-index: 2;
-    top: 20%;
-    right: 0;
-    content: "";
-    width: 100%;
-    height: 5px;
-    background-color: white;
-  }
 
   &.is-open {
     display: none;

@@ -20,11 +20,11 @@
                     <a class="logo" href="">
                         <img class="logo__img" src="./img-rast/Оригинальный.webp" alt="логотип Основа Бігу">
                     </a>
-                    <div class="burger-block is-open">
-                        <span class="burger-block__base is-open"></span>
+                    <div class="burger-block" data-menu-button>
+                        <span class="burger-block__base" data-menu-base></span>
                     </div>
                     <nav class="header__menu">
-                        <ul class="header__list">
+                        <ul class="header__list" open-menu >
                             <li class="header__link">
                                 <a href="" class="header__link"></a>Головна
                             </li>
@@ -49,30 +49,267 @@
             </div>
         </header>
 <!-- Основной контент -->
-        <main class="main container">
-            <section class="about-us">
-                <h1>Що таке Основа Бігу?</h1>
-                <ul>
-                    <li>знаючі і професійні тренера</li>
-                    <li>індивідуальний тренінг і групові заняття</li>
-                    <li>знижки і підтримка найкрутіших партнерів і брендів EthicSport, Fit&Shape, GARMIN, 2XU, ZAMST, GU, АВТОМИЙКИ AVIS, NEW BALANCE, CRAFT</li>
-                    <li>рішучість учасників клубу</li>
-                    <li>де б ви не знаходилися, у нас є програма тренування, розроблена для вас</li>
-                </ul>
-                <p>Мрієш подолати перший кілометр або готуєшся до
-                    ультрамарафон - ПРИХОДЬ БІГАТИ З НАМИ!
-                    Наші тренери займаються бігунами з будь-яким рівнем підготовки!
-                    Ти отримаєш безліч нових друзів і вражень,
-                    які змінять твоє життя! 
-                    Стань частиною потужної бігової спільноти - БІЖИ ПО ПЛАНУ!</p>
+        <main class="main">
+            <section class="section container">
+                <div class="hero">
+                    <div class="hero__back-ground">
+                    </div>
+                    <h1 class="title">
+                        Хочешь стати кращим ? <br> Тицяй на кнопку !
+                    </h1>
+                    <button class="button" type="button">Стати кращим</button>
+                </div>
             </section>
-            <section class="parners"></section>
-            <section class="main-trainer"></section>
-            <section class="races"></section>
+            <section class="section container">
+                <h1 class="title">Знайомтесь - Основа твого бігу!</h1>
+                <ul class="team">
+                    <li class="team__item">
+                        <img src="./img-rast/team/IL.webp" alt="Ігор Ліщинський">
+                        <div class="team__detail">
+                            <h3 class="team__title">Ігор Ліщинський</h3>
+                            <p class="team__text">Головний тренер</p>
+                            <ul class="social">
+                                <li class="social_item">
+                                    <a class="social__link" href="">
+                                        <svg width="20" height="20">
+                                            <use href="./img-vect/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social_item">
+                                    <a class="social__link" href="">
+                                        <svg width="20" height="20">
+                                            <use href="./img-vect/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social_item">
+                                    <a class="social__link" href="">
+                                        <svg width="20" height="20">
+                                            <use href="./img-vect/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social_item">
+                                    <a class="social__link" href="">
+                                        <svg width="20" height="20">
+                                            <use href="./img-vect/sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team__item">
+                        <img src="./img-rast/team/KL.jpg" alt="Микола Левчик">
+                        <div class="team__detail">
+                            <h3 class="team__title">Микола Левчик</h3>
+                            <p class="team__text">Тренер</p>
+                            <ul class="social">
+                                <li class="social_item">
+                                    <a class="social__link" href="">
+                                        <svg width="20" height="20">
+                                            <use href="./img-vect/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social_item">
+                                    <a class="social__link" href="">
+                                        <svg width="20" height="20">
+                                            <use href="./img-vect/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social_item">
+                                    <a class="social__link" href="">
+                                        <svg width="20" height="20">
+                                            <use href="./img-vect/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social_item">
+                                    <a class="social__link" href="">
+                                        <svg width="20" height="20">
+                                            <use href="./img-vect/sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <img src="./img-rast/team/VR.webp" alt="Віталія Ротар">
+                            <div class="team__detail">
+                                <h3 class="team__title">Віталія Ротар</h3>
+                                <p class="team__text">Тренерка</p>
+                                <ul class="social">
+                                    <li class="social_item">
+                                        <a class="social__link" href="">
+                                            <svg width="20" height="20">
+                                                <use href="./img-vect/sprite.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_item">
+                                        <a class="social__link" href="">
+                                            <svg width="20" height="20">
+                                                <use href="./img-vect/sprite.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_item">
+                                        <a class="social__link" href="">
+                                            <svg width="20" height="20">
+                                                <use href="./img-vect/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_item">
+                                        <a class="social__link" href="">
+                                            <svg width="20" height="20">
+                                                <use href="./img-vect/sprite.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <img src="./img-rast/team/KY.jpeg" alt="Кутах Юлія">
+                            <div class="team__detail">
+                                <h3 class="team__title">Кутах Юлія</h3>
+                                <p class="team__text">Тренерка</p>
+                                <ul class="social">
+                                    <li class="social_item">
+                                        <a class="social__link" href="">
+                                            <svg width="20" height="20">
+                                                <use href="./img-vect/sprite.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_item">
+                                        <a class="social__link" href="">
+                                            <svg width="20" height="20">
+                                                <use href="./img-vect/sprite.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_item">
+                                        <a class="social__link" href="">
+                                            <svg width="20" height="20">
+                                                <use href="./img-vect/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social_item">
+                                        <a class="social__link" href="">
+                                            <svg width="20" height="20">
+                                                <use href="./img-vect/sprite.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+            </section>
+            <section class="partners container section">
+                <h2 class="title">Наші друзі</h2>
+                <div class="partners-section">
+                    <ul class="partners-section__list">
+                        <li class="partner-item">
+                           <a href=""> <img src="./img-rast/partners/avis" alt=""> </a>
+                           <p class="partner-item__title"></p>
+                        </li>
+                        <li class="partner-item">
+                            <a href=""> <img src="./img-rast/partners/NB" alt=""> </a>
+                            <p class="partner-item__title"></p>
+                        </li>
+                        <li class="partner-item">
+                            <a href=""> <img src="./img-rast/partners/garmin" alt=""> </a>
+                            <p class="partner-item__title"></p>
+                        </li>
+                        <li class="partner-item">
+                            <a href=""> <img src="./img-rast/partners/medsport" alt=""> </a>
+                            <p class="partner-item__title"></p>
+                        </li>
+                        <li class="partner-item">
+                            <a href=""> <img src="" alt=""> </a>
+                            <p class="partner-item__title"></p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="races container section">
+                <h2 class="title"></h2>
+                <p class="text"></p>
+                <iFrame src = “https://cloudways.com/ “ width= “100%” height=”300px” frameborder =”1” scrolling = “yes” ></iFrame>            
+            </section>
         </main>
-        <footer class="footer">
-        </footer>            
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer-tablet">
+                <div class="wellcom-block">
+                    <h3 class="wellcom-block__title">присоединяйтесь</h3>
+                    <ul class="social">
+                        <li class="social_item ">
+                            <a class="social__link" href="">
+                                <svg width="20" height="20">
+                                    <use href="./img-vect/sprite.svg#icon-instagram"> </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_item">
+                            <a class="social__link" href="">
+                                <svg width="20" height="20">
+                                    <use href="./img-vect/sprite.svg#icon-twitter"> </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_item ">
+                            <a class="social__link" href="">
+                                <svg width="20" height="20">
+                                    <use href="./img-vect/sprite.svg#icon-facebook"> </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_item ">
+                            <a class="social__link" href="">
+                                <svg width="20" height="20">
+                                    <use href="./img-vect/sprite.svg#icon-linkedin"> </use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Subscription -->
+
+            <div class="subscription">
+                <h3 class="subscription__title">Подпишитесь на рассылку</h3>
+                <form class="subscription__form">
+                    <label class="subscription__label" for="email"></label>
+                    <input class="subscription__input" type="email" name="subscription" id="email"
+                        placeholder="E-mail" />
+                    <button class="button subscription-button" type="submit">
+                        Подписаться
+                        <svg class="subscription-button__icon" width="24" height="24">
+                            <use class="subscription-button__svg" href="./img-vect/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
     </div>
+    
+<script src="./js/burger-menu.js"> </script>
+<script src="./js/burger-list.js"> </script>
+
 </body>
 
 </html>
