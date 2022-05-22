@@ -1,0 +1,29 @@
+.font-accent {
+  text-align: center;
+  color: $accentColor;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font-footer {
+  text-align: center;
+  color: $colorWhite;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title-L1 {
+  font-size: 23px;
+  line-height: calc(40 / 20);
+}
+
+.title-L2 {
+  font-size: 20px;
+  line-height: calc(40 / 20);
+}
+
+.title-L3 {
+  font-size: 18px;
+  font-style: normal;
+  line-height: calc(30 / 20);
+}

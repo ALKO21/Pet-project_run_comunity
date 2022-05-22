@@ -1,0 +1,25 @@
+.footer{
+    background-color: $accentColor;
+}
+
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    gap: 20px;
+}
+
+
+.wellcom-block__title{
+    text-align: center;
+}
+
+.wellcom-block{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}

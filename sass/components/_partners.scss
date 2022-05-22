@@ -1,0 +1,18 @@
+.partners-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.partner-item {
+  width: 150px;
+  height: 150px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: aqua;
+  }
+}
+

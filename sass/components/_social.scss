@@ -4,21 +4,8 @@
 }
 
 .social_item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  border: 1px solid gray;
-
-  &:hover {
-    border: 1px solid $accentColor;
-    cursor: pointer;
-    fill: $accentColor;
-    color: $accentColor;
-  }
 }
 
 .social__link {
@@ -27,14 +14,28 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  padding: 10px;
-
-  color: gray;
+  border-radius: 50%;
+  border: 1px solid gray;
   fill: gray;
+  transition: background-color 250ms linear;
 
   &:hover {
-    fill: $accentColor;
-    color: $accentColor;
-
+    border: 1px solid $accentColor;
+    cursor: pointer;
+    background-color: $accentColor;
+    fill: $colorWhite;
   }
 }
+
+.social__link-footer {
+  border: 1px solid white;
+  fill: white;
+  transition: background-color 250ms linear;
+
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    fill: $accentColor;
+  }
+}
+
