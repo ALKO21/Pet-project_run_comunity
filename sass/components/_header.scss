@@ -50,15 +50,15 @@
 
       font-size: 25px;
       line-height: calc(40 / 25);
-      color: black;
-      background-color: $colorLightShade;
+      color: $colorWhite;
+      background-color: $accentColor;
     }
   }
 }
 
 .header__link {
-  &:hover {
+  &:hover, &:active {
     cursor: pointer;
-    color: white;
+    animation: burger-menu 1000ms linear;
   }
 }

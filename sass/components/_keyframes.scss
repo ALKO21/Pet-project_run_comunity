@@ -1,7 +1,26 @@
 @keyframes button {
-    
-        0% { background-color: $accentColor; box-shadow: 0 0 5px $accentColor; }
-        50% { background-color: $accentColor; box-shadow: 0 0 20px $accentColor; }
-        100% { background-color: $accentColor; box-shadow: 0 0 5px $accentColor; }
-        
+  0% {
+    background-color: $accentColor;
+    box-shadow: 0 0 5px $accentColor;
+  }
+  50% {
+    background-color: $accentColor;
+    box-shadow: 0 0 20px $accentColor;
+  }
+  100% {
+    background-color: $accentColor;
+    box-shadow: 0 0 5px $accentColor;
+  }
+}
+
+@keyframes burger-menu {
+  0% {
+    color: $colorWhite;
+  }
+  50% {
+    color: $colorLightShade;
+  }
+  100% {
+    color: $colorWhite;
+  }
 }

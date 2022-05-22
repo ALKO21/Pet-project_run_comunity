@@ -19,7 +19,7 @@
   fill: gray;
   transition: background-color 250ms linear;
 
-  &:hover {
+  &:hover, &:active {
     border: 1px solid $accentColor;
     cursor: pointer;
     background-color: $accentColor;
@@ -32,7 +32,7 @@
   fill: white;
   transition: background-color 250ms linear;
 
-  &:hover {
+  &:hover, &:active {
     cursor: pointer;
     background-color: white;
     fill: $accentColor;

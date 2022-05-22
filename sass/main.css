@@ -465,14 +465,15 @@ main {
     height: 100vh;
     font-size: 25px;
     line-height: 1.6;
-    color: black;
-    background-color: rgb(184, 165, 165);
+    color: white;
+    background-color: rgb(94, 178, 153);
   }
 }
 
-.header__link:hover {
+.header__link:hover, .header__link:active {
   cursor: pointer;
-  color: white;
+  -webkit-animation: burger-menu 1000ms linear;
+          animation: burger-menu 1000ms linear;
 }
 
 .burger-open {
@@ -650,7 +651,7 @@ main {
   fill: gray;
   transition: background-color 250ms linear;
 }
-.social__link:hover {
+.social__link:hover, .social__link:active {
   border: 1px solid rgb(94, 178, 153);
   cursor: pointer;
   background-color: rgb(94, 178, 153);
@@ -662,7 +663,7 @@ main {
   fill: white;
   transition: background-color 250ms linear;
 }
-.social__link-footer:hover {
+.social__link-footer:hover, .social__link-footer:active {
   cursor: pointer;
   background-color: white;
   fill: rgb(94, 178, 153);
@@ -711,7 +712,7 @@ main {
   width: 150px;
   height: 150px;
 }
-.partner-item:hover {
+.partner-item:hover, .partner-item:active {
   cursor: pointer;
   background-color: aqua;
 }
@@ -843,5 +844,27 @@ main {
   100% {
     background-color: rgb(94, 178, 153);
     box-shadow: 0 0 5px rgb(94, 178, 153);
+  }
+}
+@-webkit-keyframes burger-menu {
+  0% {
+    color: white;
+  }
+  50% {
+    color: rgb(184, 165, 165);
+  }
+  100% {
+    color: white;
+  }
+}
+@keyframes burger-menu {
+  0% {
+    color: white;
+  }
+  50% {
+    color: rgb(184, 165, 165);
+  }
+  100% {
+    color: white;
   }
 }/*# sourceMappingURL=main.css.map */
