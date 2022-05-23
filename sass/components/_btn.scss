@@ -33,3 +33,54 @@
 .subscription-button__icon {
   fill: white;
 }
+
+.button.button--animated{
+  margin-top: 30px;
+}
+
+
+.btn-cross{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50%;
+
+  background-color: $accentColor;
+
+  transition: transform 250ms linear;
+
+  &::after{
+    position: absolute;
+    top: 43%;
+
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: white;
+
+    transform: rotate(45deg);
+  }
+  &::before{
+    position: absolute;
+    top: 43%;
+
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: white;
+
+    transform: rotate(-45deg);
+  }
+
+  &:hover, &:active{
+    transform: rotate(90deg);
+    background-color: inherit;
+    &::before, &::after{
+      background-color: $accentColor;
+    }
+  }
+}

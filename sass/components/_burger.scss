@@ -5,8 +5,6 @@
     position: absolute;
     display: block;
     align-items: center;
-    // z-index: 5;
-    // outline: auto;
 
     top: auto;
     right: 0;
@@ -23,14 +21,12 @@
       display: block;
       height: 6px;
       border-radius: 3px;
-      // border-color: aliceblue;
       margin: 7px 0;
       transition: 0.5s;
-      // border: 1px solid white;
       width: 100%;
     }
 
-    &.is-open:before  {
+    &.is-open:before {
       transform: translateY(12px) rotate(135deg);
     }
     &.is-open:after {
@@ -39,38 +35,5 @@
     &.is-open span {
       transform: scale(0);
     }
-
-    // &.is-open {
-    //   &::before,
-    //   &::after {
-    //     content: "";
-    //     position: absolute;
-    //     top: 50%;
-    //     display: block;
-    //     width: 40px;
-    //     height: 5px;
-    //     background: white;
-    //   }
-
-    //   &::before {
-    //     transform: rotate(45deg);
-    //   }
-
-    //   &::after {
-    //     transform: rotate(-45deg);
-    //   }
-    // }
   }
 }
-
-// .burger-block__base {
-//   width: 100%;
-//   height: 5px;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: white;
-
-//   &.is-open {
-//     display: none;
-//   }
-// }
