@@ -3,8 +3,10 @@
 
   @media (max-width: 767px) {
     position: absolute;
-    display: flex;
+    display: block;
     align-items: center;
+    // z-index: 5;
+    // outline: auto;
 
     top: auto;
     right: 0;
@@ -13,53 +15,62 @@
     height: 50px;
 
     &::before,
-    &::after {
-      position: absolute;
-      z-index: 2;
-      right: 0;
+    &::after,
+    span {
+      background: white;
+      z-index: 5;
       content: "";
+      display: block;
+      height: 6px;
+      border-radius: 3px;
+      // border-color: aliceblue;
+      margin: 7px 0;
+      transition: 0.5s;
+      // border: 1px solid white;
       width: 100%;
-      height: 5px;
-      background-color: white;
-    }
-    &::before {
-      top: 20%;
-    }
-    &::after {
-      bottom: 20%;
     }
 
-    &.is-open {
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        display: block;
-        width: 40px;
-        height: 5px;
-        background: white;
-      }
-
-      &::before {
-        transform: rotate(45deg);
-      }
-
-      &::after {
-        transform: rotate(-45deg);
-      }
+    &.is-open:before  {
+      transform: translateY(12px) rotate(135deg);
     }
+    &.is-open:after {
+      transform: translateY(-12px) rotate(-135deg);
+    }
+    &.is-open span {
+      transform: scale(0);
+    }
+
+    // &.is-open {
+    //   &::before,
+    //   &::after {
+    //     content: "";
+    //     position: absolute;
+    //     top: 50%;
+    //     display: block;
+    //     width: 40px;
+    //     height: 5px;
+    //     background: white;
+    //   }
+
+    //   &::before {
+    //     transform: rotate(45deg);
+    //   }
+
+    //   &::after {
+    //     transform: rotate(-45deg);
+    //   }
+    // }
   }
 }
 
-.burger-block__base {
-  width: 100%;
-  height: 5px;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
+// .burger-block__base {
+//   width: 100%;
+//   height: 5px;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: white;
 
-  &.is-open {
-    display: none;
-  }
-}
+//   &.is-open {
+//     display: none;
+//   }
+// }
