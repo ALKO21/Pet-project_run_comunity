@@ -57,7 +57,8 @@
 }
 
 .header__link {
-  &:hover, &:active {
+  &:hover,
+  &:active {
     cursor: pointer;
     animation: burger-menu 1000ms linear;
   }
