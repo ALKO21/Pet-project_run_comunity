@@ -64,7 +64,11 @@
               Хочешь стати кращим ? <br />
               Тицяй на кнопку !
             </h2>
-            <button class="button button--animated" type="button">
+            <button
+              class="button button--animated"
+              type="button"
+              data-modal-open
+            >
               Стати кращим
             </button>
           </div>
@@ -321,32 +325,74 @@
 
     <!-- modal window -->
 
-    <div class="modal container">
-      <h3 class="title-L3 font-accent">Ще маленький крок</h3>
-      <form action="" class="modal__form">
-        <ul class="modal-form__list">
-          <li class="modal-form__item">
-            <label class="modal-form__label" for="name"> Як тебе звати? </label>
-            <input class="modal-form__input" type="text" id="name" name="name" placeholder="твоє імʼя"/>
-          </li>
-          <li class="modal-form__item">
-            <label class="modal-form__label" for="tel">
-              Залиш свій номер:
-            </label>
-            <input class="modal-form__input" type="tel" id="tel" name="tel" placeholder="твій телефончик"/>
-          </li>
-          <li class="modal-form__item">
-            <label class="modal-form__label" for="email"> А мейл? </label>
-            <input class="modal-form__input" type="email" id="email" name="email" placeholder="твоя е-пошта" />
-          </li>
-        </ul>
-        <button class="button button--animated" type="submit"> тицяй окай!</button>
-      </form>
-      <div class="btn-cross"></div>
+    <div class="container modal-container">
+      <div class="modal" data-modal>
+        <h3 class="title-L3 font-accent">Ще маленький крок</h3>
+        <form action="" class="modal__form">
+          <ul class="modal-form__list">
+            <li class="modal-form__item">
+              <label class="modal-form__label" for="name">
+                Як тебе звати?
+              </label>
+              <input
+                class="modal-form__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="твоє імʼя"
+              />
+              <svg class="modal__icon">
+                <use
+                  class="modal__svg"
+                  href="./img-vect/sprite.svg#snikers-green"
+                ></use>
+              </svg>
+            </li>
+            <li class="modal-form__item">
+              <label class="modal-form__label" for="tel">
+                Залиш свій номер:
+              </label>
+              <input
+                class="modal-form__input"
+                type="tel"
+                id="tel"
+                name="tel"
+                placeholder="твій телефончик"
+              />
+              <svg class="modal__icon">
+                <use
+                  class="modal__svg"
+                  href="./img-vect/sprite.svg#snikers-red"
+                ></use>
+              </svg>
+            </li>
+            <li class="modal-form__item">
+              <label class="modal-form__label" for="email"> А мейл? </label>
+              <input
+                class="modal-form__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="твоя е-пошта"
+              />
+              <svg class="modal__icon">
+                <use
+                  class="modal__svg"
+                  href="./img-vect/sprite.svg#snikers-blue"
+                ></use>
+              </svg>
+            </li>
+          </ul>
+          <button class="button button--animated" type="submit">
+            тицяй окай!
+          </button>
+          <div class="btn-cross" data-modal-close></div>
+        </form>
+      </div>
     </div>
-
     <!-- modal window END  -->
     <script src="./js/burger-menu.js"></script>
     <script src="./js/burger-list.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
