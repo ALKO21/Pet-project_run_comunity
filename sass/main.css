@@ -400,7 +400,6 @@ main {
 }
 
 .container {
-  outline: red solid 1px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -419,7 +418,6 @@ main {
 }
 
 .header {
-  outline: green solid 1px;
   position: fixed;
   width: 100%;
   height: 70px;
